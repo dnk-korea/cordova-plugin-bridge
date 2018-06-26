@@ -1,5 +1,5 @@
 {
-  "name": "com.dnk.bridge",
+  "name": "cordova-plugin-bridge",
   "version": "0.0.1",
   "description": "plugin used in resurfy SNS",
   "repository": {
