@@ -1,0 +1,26 @@
+{
+  "name": "com.dnk.bridge",
+  "version": "0.0.1",
+  "description": "plugin used in resurfy SNS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnk-korea/cordova-plugin-bridge.git"
+  },
+  "cordova": {
+    "id": "com.dnk.bridge",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": {
+    "name" : "bhong",
+    "email": "bhong@dnkecommerce.com",
+    "url": "http://www.dnkecommerce.com"
+  },
+  "license": "GNU AGPL"
+}

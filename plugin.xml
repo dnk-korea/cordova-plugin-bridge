@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.dnk.bridge" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>bridge</name>
+    <js-module name="bridge" src="www/bridge.js">
+        <clobbers target="bridge" />
+    </js-module>
+
+	<platform name="android"> 
+		<config-file target="config.xml" parent="/*"> 
+			<feature name="bridge"> 
+				<param name="android-package" value="com.dnk.bridge.bridge" /> 
+			</feature> 
+		</config-file> 
+		<source-file src="src/android/bridge.java" target-dir="src/com/dnk/bridge" /> 
+	</platform>
+
+
+	<platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Bridge">
+                <param name="ios-package" value="Bridge" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/Bridge.swift" /> 
+        <dependency id="cordova-plugin-add-swift-support" version="1.6.0"/>
+    </platform>
+
+
+</plugin>
